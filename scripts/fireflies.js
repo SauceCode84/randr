@@ -1,18 +1,31 @@
 var windowWidth;
 var windowHeight;
 var canvas;
-var con;
+var context;
 var g;
 var pxs = new Array();
 var rint = 50;
 
 $(document).ready(function () {
-    windowWidth = window.innerWidth;
-    windowHeight = window.innerHeight;
-    $('#container').width(windowWidth).height(windowHeight);
+    function setWindowValues() {
+        windowWidth = window.innerWidth;
+        windowHeight = window.innerHeight;
+    }
+
+    setWindowValues();
+
+    $('#container')
+        .width(windowWidth)
+        .height(windowHeight);
+
     canvas = document.getElementById('pixie');
-    $(canvas).attr('width', windowWidth).attr('height', windowHeight);
-    con = canvas.getContext('2d');
+
+    $(canvas)
+        .attr('width', windowWidth)
+        .attr('height', windowHeight);
+
+    context = canvas.getContext('2d');
+
     for (var i = 0; i < 50; i++) {
         pxs[i] = new Circle();
         pxs[i].reset();
@@ -21,8 +34,17 @@ $(document).ready(function () {
     setInterval(draw, rint);
 });
 
+var resizeTimer;
+$(window).resize(function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+        console.log('window resize');
+    }, 250);
+});
+
 function draw() {
-    con.clearRect(0, 0, windowWidth, windowHeight);
+    context.clearRect(0, 0, windowWidth, windowHeight);
+
     for (var i = 0; i < pxs.length; i++) {
         pxs[i].fade();
         pxs[i].move();
@@ -44,9 +66,9 @@ function Circle() {
         this.hl = (this.s.ttl / rint) * (this.r / this.s.rmax);
         this.rt = Math.random() * this.hl;
         this.s.rt = Math.random() + 1;
-        this.stop = Math.random() * .2 + .4;
-        this.s.xdrift *= Math.random() * (Math.random() < .5 ? -1 : 1);
-        this.s.ydrift *= Math.random() * (Math.random() < .5 ? -1 : 1);
+        this.stop = Math.random() * 0.2 + 0.4;
+        this.s.xdrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1);
+        this.s.ydrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1);
     }
 
     this.fade = function () {
@@ -57,16 +79,16 @@ function Circle() {
         if (this.s.blink && (this.rt <= 0 || this.rt >= this.hl)) this.s.rt = this.s.rt * -1;
         else if (this.rt >= this.hl) this.reset();
         var newo = 1 - (this.rt / this.hl);
-        con.beginPath();
-        con.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
-        con.closePath();
+        context.beginPath();
+        context.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
+        context.closePath();
         var cr = this.r * newo;
-        g = con.createRadialGradient(this.x, this.y, 0, this.x, this.y, (cr <= 0 ? 1 : cr));
+        g = context.createRadialGradient(this.x, this.y, 0, this.x, this.y, (cr <= 0 ? 1 : cr));
         g.addColorStop(0.0, 'rgba(238,180,28,' + newo + ')');
         g.addColorStop(this.stop, 'rgba(238,180,28,' + (newo * .2) + ')');
         g.addColorStop(1.0, 'rgba(238,180,28,0)');
-        con.fillStyle = g;
-        con.fill();
+        context.fillStyle = g;
+        context.fill();
     }
 
     this.move = function () {
