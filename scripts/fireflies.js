@@ -3,28 +3,15 @@ var windowHeight;
 var canvas;
 var context;
 var g;
-var pxs = new Array();
+var pxs = [];
 var rint = 50;
+var resizeTimer;
 
 $(document).ready(function () {
-    function setWindowValues() {
-        windowWidth = window.innerWidth;
-        windowHeight = window.innerHeight;
-    }
 
     setWindowValues();
-
-    $('#container')
-        .width(windowWidth)
-        .height(windowHeight);
-
-    canvas = document.getElementById('pixie');
-
-    $(canvas)
-        .attr('width', windowWidth)
-        .attr('height', windowHeight);
-
-    context = canvas.getContext('2d');
+    setContainerValues();
+    setupCanvas();
 
     for (var i = 0; i < 50; i++) {
         pxs[i] = new Circle();
@@ -34,13 +21,37 @@ $(document).ready(function () {
     setInterval(draw, rint);
 });
 
-var resizeTimer;
 $(window).resize(function() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function() {
         console.log('window resize');
+
+        setWindowValues();
+        setContainerValues();
+        setupCanvas();
     }, 250);
 });
+
+function setWindowValues() {
+    windowWidth = window.innerWidth;
+    windowHeight = window.innerHeight;
+}
+
+function setContainerValues() {
+    $('#container')
+        .width(windowWidth)
+        .height(windowHeight);
+}
+
+function setupCanvas() {
+    canvas = document.getElementById('pixie');
+
+    $(canvas)
+        .attr('width', windowWidth)
+        .attr('height', windowHeight);
+
+    context = canvas.getContext('2d');
+}
 
 function draw() {
     context.clearRect(0, 0, windowWidth, windowHeight);
