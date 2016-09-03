@@ -3,6 +3,10 @@ html, body, div, span, canvas {
     padding:0;
 }
 
+body {
+    font-family: "calluna-sans", sans-serif;
+}
+
 #container {
     overflow: hidden;
     position: relative;
@@ -20,8 +24,53 @@ html, body, div, span, canvas {
 }
 
 #pixie {
-    z-index:10;
+    z-index: 10;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#clock {
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    z-index: 100;
+}
+
+#clock > div {
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+#clock div > span {
+    padding: 15px;
+    width: 40px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.smallText {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.ampersand {
+    font-family: "tangerine";
 }
