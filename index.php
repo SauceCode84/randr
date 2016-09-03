@@ -44,9 +44,9 @@
                         <div class="smallText">seconds</div>
                     </div>
                 </div>
-                <div>
+                <!--<div>
                     <strong>R</strong>osslynne <div class="ampersand">&</div> Richard
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
