@@ -116,6 +116,7 @@
 	.cbp-bislideshow li img {
 		display: block;
 		width: auto;
+		max-height: 50%;
 	}
 	
 	#story {
@@ -125,9 +126,9 @@
 	}
 
 	#timer {
-		height: 640px;
+		height: 780px;
 		min-height: auto;
-		padding: 4em 0;	
+		padding: 4em 0;
 	}
 	
 	ul#countdown li {  
@@ -790,6 +791,7 @@
 	.cbp-bislideshow li img {
 		display: block;
 		width: auto;
+		max-height: 90%;
 	}
 	
 	#story {
