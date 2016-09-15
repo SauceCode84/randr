@@ -887,6 +887,7 @@ ul#countdown li span::before {
 	top: 2em;
 }
 
+ul#countdown li .timeRefMonths,
 ul#countdown li .timeRefDays,
 ul#countdown li .timeRefHours,
 ul#countdown li .timeRefMinutes,
