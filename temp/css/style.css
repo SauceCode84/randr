@@ -555,8 +555,9 @@ section::after {
 }
 
 #about {
-	background: #FFF;
-	height: 1440px;
+	/*background: #FFF;*/
+	background-image: url("../images/album/stressedpaper.jpg");
+	height: 1020px;
 	margin: 0 auto;
 	color: #5E3921;
 	padding: 2.5em 0;
@@ -573,7 +574,7 @@ section::after {
 }
 
 #wedding {
-	background: #FFF;
+	background: #F2EDE6;
 	height: 1500px;
 	margin: 0 auto;
 	color: #5E3921;
@@ -1146,7 +1147,7 @@ ul#countdown li .timeRefSeconds {
 
 .ceremony-data h4 {
 	font-size: 1.2em;
-	color: #D65679;
+	color: #4C0013;
 	padding-top: 1em;
 }
 
@@ -1226,7 +1227,7 @@ ul#countdown li .timeRefSeconds {
 
 .party-data h4 {
 	font-size: 1.2em;
-	color: #D65679;
+	color: #4C0013;
 	padding-top: 1em;
 }
 
@@ -1326,7 +1327,7 @@ ul#countdown li .timeRefSeconds {
 
 .location-data h4 {
 	font-size: 1.2em;
-	color: #D65679;
+	color: #4C0013;
 	padding-top: 0;
 }
 
