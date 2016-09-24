@@ -1,20 +1,47 @@
 
-.cream {
+/**  backgrounds  **/
+.cream-background {
     background: #F2EDE6;
 }
 
-.dusty-pink {
+.dusty-pink-background {
     background: #F4DAD4;
 }
 
-.burgundy {
+.burgundy-background {
     background: #4C0013;
 }
 
-.brown {
+.brown-background {
     background: #3A2215;
 }
 
-.grey {
+.grey-background {
     background: #45454F;
+}
+
+
+/**  text  **/
+.cream-text {
+    color: #F2EDE6;
+}
+
+.dusty-pink-text {
+    color: #F4DAD4;
+}
+
+.burgundy-text {
+    color: #4C0013;
+}
+
+.brown-text {
+    color: #3A2215;
+}
+
+.grey-text {
+    color: #45454F;
+}
+
+.eerie-black {
+    color: #161619;
 }

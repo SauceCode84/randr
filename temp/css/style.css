@@ -194,7 +194,18 @@ label {
 	overflow-x: hidden;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -236,7 +247,7 @@ label {
 	height: 50px;
 	font-size: 1em;
 	font-weight: 400;
-	background: #D65679;
+	background: #4C0013;
 	color: #FFF;
 	text-align: center;
 	z-index: 1000;
@@ -257,16 +268,16 @@ label {
 }
 
 .back a:hover {
-	background: #D65679 !important;
+	background: #4C0013 !important;
 }
 
 
 .trigger a {
-	background: #D65679 !important;
+	background: #4C0013 !important;
 }
 
 .trigger a:hover {
-	background: #D65679 !important;
+	background: #4C0013 !important;
 }
 
 .date {
@@ -297,7 +308,7 @@ label {
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	background: #D65679 !important;
+	background: #4C0013 !important;
 }
 
 .gn-menu-main > li:last-child {
@@ -428,19 +439,19 @@ label {
 	width: 30px;
 	height: 4px;
 	background: #FFF;
-	box-shadow: 0 4px #D65679, 0 -8px #FFF, 0 -12px #D65679, 0 -16px #FFF;
+	box-shadow: 0 4px #4C0013, 0 -8px #FFF, 0 -12px #4C0013, 0 -16px #FFF;
 	content: '';
 }
 
 .no-touch .gn-icon-menu:hover::before,
 .no-touch .gn-icon-menu.gn-selected:hover::before {
 	background: #FFF;
-	box-shadow: 0 4px #D65679, 0 -8px #FFFFFF, 0 -12px #D65679, 0 -16px #FFFFFF;
+	box-shadow: 0 4px #4C0013, 0 -8px #FFFFFF, 0 -12px #4C0013, 0 -16px #FFFFFF;
 }
 
 .gn-icon-menu.gn-selected::before {
 	background: #FFF;
-	box-shadow: 0 4px #D65679, 0 -8px #FFFFFF, 0 -12px #D65679, 0 -16px #FFFFFF;
+	box-shadow: 0 4px #4C0013, 0 -8px #FFFFFF, 0 -12px #4C0013, 0 -16px #FFFFFF;
 }
 
 /* styles for opening menu */
@@ -480,7 +491,7 @@ label {
 section {
 	position: relative;
 	padding: 0;
-	background: #D65679;
+	background: #4C0013;
 	text-align: center;
 }
 
@@ -496,8 +507,8 @@ section::after {
 	height: 10px;
 	background-size: 13px 100%;
 	top: 0;
-	background-image: linear-gradient(583deg, #D65679 50%, transparent 50%), 
-					        linear-gradient(136deg, #D65679 50%, transparent 50%);
+	background-image: linear-gradient(583deg, #4C0013 50%, transparent 50%), 
+					  linear-gradient(136deg, #4C0013 50%, transparent 50%);
 	margin-top: 50px;
 	position: fixed;
 	z-index: 1000;
@@ -526,6 +537,7 @@ section::after {
 }
 
 #story {
+	background: url("../images/album/stressedpaper.jpg") 50% 0 no-repeat fixed;
 	background: #FFF no-repeat fixed;
 	color: #5E3921;
 	height: 770px;
@@ -534,7 +546,7 @@ section::after {
 }
 
 #timer {
-	background: url('http://placehold.it/1920x1225/6e6e86/76768E') 50% 0 no-repeat fixed;
+	background: url("../images/album/randrhands.jpg") 50% 0 no-repeat fixed;
 	color: #FFF;
 	width: 100%;
 	height: 410px;
@@ -639,7 +651,7 @@ section::after {
 .header-button a:hover {
 	margin: 0 auto;
 	text-align: center;
-	color: #D65679;
+	color: #4C0013;
 }
 
 
@@ -822,7 +834,7 @@ ul#countdown li:after {
 	top: 0; 
 	width: 60px; 
 	height: 96px; 
-	background: #D65679; 
+	background: #4C0013; 
 	-moz-border-radius: 60px 60px 0 0; 
 	border-radius: 60px 60px 0 0; 
 	-webkit-transform: rotate(-45deg); 
