@@ -598,7 +598,7 @@ section::after {
 }
 
 #album {
-	background: #FFF;
+	background: #F2EDE6;
 	height: 1000px;
 	margin: 0 auto;
 	color: #5E3921;
@@ -606,7 +606,7 @@ section::after {
 }
 
 #rsvp {
-	background: url('http://placehold.it/1920x2158/6e6e86/76768E') 50% 0 no-repeat fixed;
+	background: url('../images/album/rsvpinvitations.jpg') 50% 0 no-repeat fixed;
 	color: #FFF;
 	height: 380px;
 	margin: 0 auto;
