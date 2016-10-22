@@ -564,7 +564,7 @@ section::after {
 }
 
 #events {
-	background: url('http://placehold.it/1920x1080/6e6e86/76768E') 50% 0 no-repeat fixed;
+	background: url('../images/album/randrengagement1.jpg') 50% 0 no-repeat fixed;
 	color: #FFF;
 	height: 380px;
 	width: 100%;
@@ -574,7 +574,8 @@ section::after {
 }
 
 #wedding {
-	background: #F2EDE6;
+	/*background: #F2EDE6;*/
+	background-image: url("../images/album/stressedpaper.jpg");
 	height: 1500px;
 	margin: 0 auto;
 	color: #5E3921;
@@ -588,12 +589,13 @@ section::after {
 }
 
 #registry {
-	background: url('http://placehold.it/1920x1360/6e6e86/76768E') 50% 0 no-repeat fixed;
+	/*background: url('../images/album/registry-small.jpg') 50% 0 no-repeat fixed;*/
+	background-color: #4C0013;
 	color: #FFF;
-	height: 400px;
+	/*height: 600px;*/
 	width: 100%;
 	margin: 0 auto;
-	padding: 3em 0;
+	padding: 2em 0;
 	z-index: -1000;
 }
 
@@ -616,7 +618,8 @@ section::after {
 }
 
 #form {
-	background: #FFF;
+	/*background: #FFF;*/
+	background-image: url("../images/album/stressedpaper.jpg");
 	height: 740px;
 	margin: 0 auto;
 	color: #5E3921;
@@ -1146,13 +1149,18 @@ ul#countdown li .timeRefSeconds {
 }
 
 .ceremony-data h4 {
-	font-size: 1.2em;
+	font-size: 1.4em;
+	font-weight: 700;
 	color: #4C0013;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 	padding-top: 1em;
 }
 
 .ceremony-data p {
+	font-size: 1.2em;
 	font-style: normal;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 }
 
 .ceremony-text p {
@@ -1226,18 +1234,22 @@ ul#countdown li .timeRefSeconds {
 }
 
 .party-data h4 {
-	font-size: 1.2em;
+	font-size: 1.4em;
+	font-weight: 700;
 	color: #4C0013;
 	padding-top: 1em;
 }
 
 .party-data p {
 	font-style: normal;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 }
 
 .party-text p {
+	font-size: 1.2em;
 	text-align: justify;
 	margin: 1.8em 0.5em;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 }
 
 /* party slider */
@@ -1326,14 +1338,17 @@ ul#countdown li .timeRefSeconds {
 }
 
 .location-data h4 {
-	font-size: 1.2em;
+	font-size: 1.4em;
+	font-weight: bold;
 	color: #4C0013;
 	padding-top: 0;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 }
 
 .location-data p {
 	text-align: center;
 	margin: 0 auto;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 }
 
 
