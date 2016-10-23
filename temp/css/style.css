@@ -537,9 +537,9 @@ section::after {
 }
 
 #story {
-	background-image: url("../images/album/stressedpaper.jpg");
+	background-image: url("../images/album/stressedpaper-key.jpg");
 	color: #5E3921;
-	height: 770px;
+	height: 900px;
 	margin: 0 auto;
 	padding: 2.5em 0;
 }
@@ -557,7 +557,7 @@ section::after {
 #about {
 	/*background: #FFF;*/
 	background-image: url("../images/album/stressedpaper.jpg");
-	height: 1020px;
+	height: 1330px;
 	margin: 0 auto;
 	color: #5E3921;
 	padding: 2.5em 0;
@@ -576,7 +576,7 @@ section::after {
 #wedding {
 	/*background: #F2EDE6;*/
 	background-image: url("../images/album/stressedpaper.jpg");
-	height: 1500px;
+	height: 1700px;
 	margin: 0 auto;
 	color: #5E3921;
 	padding: 2.5em 0;
@@ -600,7 +600,8 @@ section::after {
 }
 
 #album {
-	background: #F2EDE6;
+	/*background: #F2EDE6;*/
+	background-image: url("../images/album/stressedpaper.jpg");
 	height: 1000px;
 	margin: 0 auto;
 	color: #5E3921;
@@ -619,7 +620,7 @@ section::after {
 
 #form {
 	/*background: #FFF;*/
-	background-image: url("../images/album/stressedpaper.jpg");
+	background-image: url("../images/album/stressedpaper-key.jpg");
 	height: 740px;
 	margin: 0 auto;
 	color: #5E3921;
@@ -765,6 +766,8 @@ section::after {
 
 .bride-name {
 	font-size: 1.5em;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 	color: #4C0013;
 	line-height: 100%;
 	padding-top: 0.6em;
@@ -773,13 +776,16 @@ section::after {
 .bride-description {
 	color: #4C0013;
 	font-size: 1.2em;
-	font-weight: normal;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 	padding: 0;
 	text-transform: none;
 }
 	
 .groom-name {
 	font-size: 1.5em;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 	color: #45454F;
 	line-height: 80%;
 	padding-top: 0.6em;
@@ -788,7 +794,8 @@ section::after {
 .groom-description {
 	color: #45454F;
 	font-size: 1.2em;
-	font-weight: normal;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 	padding: 0;
 	text-transform: none;
 }
@@ -1102,14 +1109,18 @@ ul#countdown li .timeRefSeconds {
 	float: left;
 }
 
-.bridesmaids h4{
+.bridesmaids h4 {
 	font-size: 1.2em;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 	color: #4C0013;
 	padding: 0.4em 0;
 }
 
-.groomsmen h4{
+.groomsmen h4 {
 	font-size: 1.2em;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 	color: #45454F;
 	padding: 0.4em 0;
 }
@@ -1164,8 +1175,10 @@ ul#countdown li .timeRefSeconds {
 }
 
 .ceremony-text p {
+	font-size: 1.2em;
 	text-align: justify;
 	margin: 1.8em 0.5em;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.75);
 }
 
 /* ceremony slider */
@@ -1401,6 +1414,7 @@ ul#countdown li .timeRefSeconds {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
+	background-color: #4C0013; 
 }
 
 .photostack figure {
@@ -1418,6 +1432,7 @@ ul#countdown li .timeRefSeconds {
 	position: absolute;
 	display: block;
 	margin: 0;
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.15);
 }
 
 .photostack figcaption h2 {
@@ -1708,7 +1723,7 @@ figure.photostack-current::after {
 
 .attending-text {
 	font-family: 'Lato', 'Helvetica', sans-serif;
-	color: #D65679;
+	color: #4C0013;
 	font-style: italic;
 	font-size: 1em !important;
 	font-weight: 500;
@@ -1735,8 +1750,8 @@ figure.photostack-current::after {
 }
 
 .btn-success {
-	background-color: #D65679;
-	border-color: #CC4569;
+	background-color: #4C0013;
+	border-color: #260009;
 	border-radius: 0;
 	float: right;
 	margin-right: 0.2em;
